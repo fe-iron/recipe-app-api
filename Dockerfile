@@ -1,4 +1,4 @@
-From python:3.9-alpine
+From python:3.7-alpine
 MAINTAINER Faiz Elahi
 
 ENV PYTHONUNBUFFERED 1
@@ -10,5 +10,4 @@ RUN mkdir /app
 WORKDIR ./app /app
 COPY ./app /app
 
-RUN adduser -D user
-USER user
+
